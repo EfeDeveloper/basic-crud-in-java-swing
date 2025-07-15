@@ -35,7 +35,6 @@ public class ConnectionPostgreSQL {
     }
 
     public Connection connect() {
-        System.out.println("Hello");
         try {
             connection = DriverManager.getConnection(connectionUrl, user, password);
             if(connection != null){
