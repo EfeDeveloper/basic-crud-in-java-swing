@@ -30,7 +30,7 @@ public class ConnectionPostgreSQL {
             DBName = props.getProperty("db.name");
             connectionUrl = "jdbc:postgresql://" + server + ":" + port + "/" + DBName;
         } catch (IOException e) {
-            System.out.println("Error leyendo db.properties: " + e.getMessage());
+            System.out.println("Error reading db.properties: " + e.getMessage());
         }
     }
 
